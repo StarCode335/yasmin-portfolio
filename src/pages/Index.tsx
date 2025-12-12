@@ -254,7 +254,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground font-body">
-              © 2024 Yasmin Rocha. Todos os direitos reservados.
+              © 2025 Yasmin Rocha
             </p>
             <div className="flex items-center gap-2 text-wine-light">
               <span className="text-sm">✦</span>
