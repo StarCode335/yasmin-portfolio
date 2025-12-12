@@ -1,32 +1,29 @@
-import { Mail, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpg";
-import floralOrnament from "@/assets/floral-ornament.png";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import GothicBook from "@/components/GothicBook";
+import FloatingPetals from "@/components/FloatingPetals";
 
 const projects = [
   {
-    title: "Dashboard Analytics",
-    description: "Painel administrativo com gráficos interativos e métricas em tempo real.",
-    techs: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
-    image: project1,
-    link: "#",
+    title: "DevLinks",
+    description: "Página agregadora de links pessoais com design moderno e responsivo.",
+    techs: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+    link: "https://github.com/yas-rocha/devlink",
   },
   {
-    title: "E-commerce Store",
-    description: "Loja virtual completa com carrinho de compras e sistema de pagamentos.",
-    techs: ["Next.js", "Stripe", "Node.js", "MongoDB"],
-    image: project2,
-    link: "#",
+    title: "CadCliente",
+    description: "Sistema de cadastro de clientes com interface intuitiva e funcional.",
+    techs: ["JavaScript", "HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    link: "https://github.com/yas-rocha/CadCliente",
   },
   {
-    title: "Landing Page",
-    description: "Página de apresentação elegante com animações e design responsivo.",
-    techs: ["React", "Framer Motion", "Tailwind CSS"],
-    image: project3,
-    link: "#",
+    title: "Code In The Dark",
+    description: "Projeto de codificação competitiva desenvolvido durante evento.",
+    techs: ["HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop",
+    link: "https://github.com/yas-rocha/code-in-the-dark",
   },
 ];
 
@@ -35,6 +32,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Noise texture overlay */}
       <div className="fixed inset-0 pointer-events-none texture-paper z-50" />
+      
+      {/* Floating petals animation */}
+      <FloatingPetals />
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border">
@@ -56,19 +56,6 @@ const Index = () => {
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-vintage" />
         
-        {/* Floral ornaments */}
-        <img 
-          src={floralOrnament} 
-          alt="" 
-          className="absolute top-10 right-10 w-32 md:w-48 opacity-30 animate-float"
-        />
-        <img 
-          src={floralOrnament} 
-          alt="" 
-          className="absolute bottom-10 left-10 w-32 md:w-48 opacity-30 rotate-180 animate-float"
-          style={{ animationDelay: '3s' }}
-        />
-        
         <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Text content */}
@@ -78,8 +65,8 @@ const Index = () => {
               </div>
               
               <h1 className="animate-fade-up animate-delay-100 mt-6 text-5xl md:text-7xl font-display font-bold text-cream leading-tight">
-                Seu Nome<br />
-                <span className="text-wine-light">Aqui</span>
+                Yasmin<br />
+                <span className="text-wine-light">Rocha</span>
               </h1>
               
               <p className="animate-fade-up animate-delay-200 mt-4 text-2xl md:text-3xl font-display italic text-cream-dark">
@@ -94,30 +81,15 @@ const Index = () => {
                 <Button variant="vintage" size="lg" asChild>
                   <a href="#projetos">Ver Projetos</a>
                 </Button>
-                <Button variant="gold" size="lg" asChild>
+                <Button variant="silver" size="lg" asChild>
                   <a href="#contato">Entre em Contato</a>
                 </Button>
               </div>
             </div>
             
-            {/* Profile photo */}
+            {/* Gothic Book Illustration */}
             <div className="animate-fade-up animate-delay-300 flex justify-center md:justify-end">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-wine to-wine-dark opacity-50 blur-2xl" />
-                <div className="relative border-2 border-wine p-2">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Foto de perfil" 
-                    className="w-64 md:w-80 h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                    style={{ filter: 'grayscale(30%) sepia(20%)' }}
-                  />
-                </div>
-                {/* Decorative corner elements */}
-                <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-gold" />
-                <div className="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-gold" />
-                <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-gold" />
-                <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-gold" />
-              </div>
+              <GothicBook />
             </div>
           </div>
         </div>
@@ -169,7 +141,7 @@ const Index = () => {
                     {project.techs.map((tech, i) => (
                       <span 
                         key={i}
-                        className="text-xs uppercase tracking-wider text-gold-muted border border-gold-muted/30 px-2 py-1"
+                        className="text-xs uppercase tracking-wider text-silver-muted border border-silver-muted/30 px-2 py-1"
                       >
                         {tech}
                       </span>
@@ -179,7 +151,7 @@ const Index = () => {
                   {/* Link */}
                   <div className="mt-6">
                     <Button variant="vintage" size="sm" asChild className="w-full">
-                      <a href={project.link}>Ver Projeto →</a>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
                     </Button>
                   </div>
                 </div>
@@ -214,9 +186,8 @@ const Index = () => {
               
               <div className="space-y-6 text-lg font-body text-cream-dark leading-relaxed">
                 <p>
-                  Olá! Sou uma desenvolvedora web júnior apaixonada por criar experiências digitais 
-                  bonitas e funcionais. Atualmente estou estudando desenvolvimento web e me aprofundando 
-                  em tecnologias como React, TypeScript e Node.js.
+                  Olá! Sou a Yasmin, uma desenvolvedora web júnior e também vestibulanda de Letras. 
+                  A programação entrou na minha vida como um hobby e acabou se tornando uma paixão.
                 </p>
                 <p>
                   Comecei a programar por curiosidade e acabei me apaixonando pela possibilidade de 
@@ -234,7 +205,7 @@ const Index = () => {
               <div className="mt-10 pt-8 border-t border-border">
                 <h3 className="font-display text-xl text-cream mb-6">Tecnologias que estudo</h3>
                 <div className="flex flex-wrap gap-3">
-                  {["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind CSS", "Node.js", "Git"].map((skill) => (
+                  {["HTML", "CSS", "JavaScript", "Node.js", "React"].map((skill) => (
                     <span 
                       key={skill}
                       className="text-sm uppercase tracking-wider text-wine-light border border-wine px-4 py-2 hover:bg-wine hover:text-cream transition-all duration-300"
@@ -272,17 +243,17 @@ const Index = () => {
             <div className="flex items-center justify-center gap-4 mb-10">
               <Mail className="w-5 h-5 text-wine-light" />
               <a 
-                href="mailto:seuemail@exemplo.com" 
+                href="mailto:yasminnascimentorocha33@gmail.com" 
                 className="text-xl font-body text-cream hover:text-wine-light transition-colors"
               >
-                seuemail@exemplo.com
+                yasminnascimentorocha33@gmail.com
               </a>
             </div>
             
             {/* Social links */}
             <div className="flex items-center justify-center gap-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/yas-rocha" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
@@ -290,20 +261,12 @@ const Index = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/yasmin-rocha-06a96930a" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
-              >
-                <Instagram className="w-5 h-5" />
               </a>
             </div>
             
@@ -345,13 +308,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Floral ornament */}
-        <img 
-          src={floralOrnament} 
-          alt="" 
-          className="absolute bottom-0 right-0 w-40 opacity-20 translate-x-1/4 translate-y-1/4"
-        />
       </section>
 
       {/* Footer */}
@@ -359,7 +315,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground font-body">
-              © 2024 Seu Nome. Todos os direitos reservados.
+              © 2024 Yasmin Rocha. Todos os direitos reservados.
             </p>
             <div className="flex items-center gap-2 text-wine-light">
               <span className="text-sm">✦</span>

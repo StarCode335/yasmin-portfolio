@@ -70,9 +70,9 @@ export default {
           DEFAULT: "hsl(var(--cream))",
           dark: "hsl(var(--cream-dark))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          muted: "hsl(var(--gold-muted))",
+        silver: {
+          DEFAULT: "hsl(var(--silver))",
+          muted: "hsl(var(--silver-muted))",
         },
         aged: {
           paper: "hsl(var(--aged-paper))",
