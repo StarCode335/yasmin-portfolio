@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GothicBook from "@/components/GothicBook";
 import FloatingPetals from "@/components/FloatingPetals";
@@ -45,7 +45,6 @@ const Index = () => {
               <a href="#inicio" className="link-vintage text-sm uppercase tracking-widest text-muted-foreground hover:text-cream transition-colors">Início</a>
               <a href="#projetos" className="link-vintage text-sm uppercase tracking-widest text-muted-foreground hover:text-cream transition-colors">Projetos</a>
               <a href="#sobre" className="link-vintage text-sm uppercase tracking-widest text-muted-foreground hover:text-cream transition-colors">Sobre</a>
-              <a href="#contato" className="link-vintage text-sm uppercase tracking-widest text-muted-foreground hover:text-cream transition-colors">Contato</a>
             </div>
           </div>
         </div>
@@ -74,15 +73,12 @@ const Index = () => {
               </p>
               
               <p className="animate-fade-up animate-delay-300 mt-6 text-lg text-muted-foreground font-body max-w-md mx-auto md:mx-0">
-                "Aprendendo, criando e evoluindo todos os dias."
+                Aprendendo, criando e evoluindo todos os dias.
               </p>
               
               <div className="animate-fade-up animate-delay-400 mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
                 <Button variant="vintage" size="lg" asChild>
                   <a href="#projetos">Ver Projetos</a>
-                </Button>
-                <Button variant="silver" size="lg" asChild>
-                  <a href="#contato">Entre em Contato</a>
                 </Button>
               </div>
             </div>
@@ -104,8 +100,7 @@ const Index = () => {
       <section id="projetos" className="py-24 relative">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-wine-light text-sm uppercase tracking-[0.3em] font-body">Meu trabalho</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-display font-bold text-cream">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-cream">
               Projetos
             </h2>
             <div className="mt-6 divider-ornate max-w-md mx-auto text-wine-light">✦</div>
@@ -170,8 +165,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-wine-light text-sm uppercase tracking-[0.3em] font-body">Quem sou eu</span>
-              <h2 className="mt-4 text-4xl md:text-5xl font-display font-bold text-cream">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-cream">
                 Sobre Mim
               </h2>
               <div className="mt-6 divider-ornate max-w-md mx-auto text-wine-light">✦</div>
@@ -186,18 +180,13 @@ const Index = () => {
               
               <div className="space-y-6 text-lg font-body text-cream-dark leading-relaxed">
                 <p>
-                  Olá! Sou a Yasmin, uma desenvolvedora web júnior e também vestibulanda de Letras. 
-                  A programação entrou na minha vida como um hobby e acabou se tornando uma paixão.
+                  Olá! Sou a Yasmin — desenvolvedora web júnior e vestibulanda de Letras. A programação começou como um hobby e, sem eu perceber, virou uma paixão.
                 </p>
                 <p>
-                  Comecei a programar por curiosidade e acabei me apaixonando pela possibilidade de 
-                  transformar ideias em realidade através do código. O que mais me fascina é a 
-                  combinação entre lógica e criatividade que a programação oferece.
+                  Entrei nesse mundo por pura curiosidade e acabei me encantando com a ideia de transformar pensamentos em algo real através do código. O que mais me prende é justamente essa mistura de lógica com criatividade.
                 </p>
                 <p>
-                  Gosto especialmente de desenvolver interfaces de usuário elegantes, sites responsivos 
-                  e aplicações web que proporcionem uma boa experiência ao usuário. Estou sempre em 
-                  busca de aprender novas tecnologias e melhorar minhas habilidades.
+                  Estou sempre estudando, explorando novas tecnologias e buscando evoluir um pouco mais a cada projeto.
                 </p>
               </div>
               
@@ -224,30 +213,17 @@ const Index = () => {
       <section id="contato" className="py-24 relative">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="text-wine-light text-sm uppercase tracking-[0.3em] font-body">Vamos conversar</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-display font-bold text-cream">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-cream">
               Contato
             </h2>
             <div className="mt-6 divider-ornate max-w-md mx-auto text-wine-light">✦</div>
           </div>
           
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-10">
               <p className="text-lg font-body text-cream-dark">
-                Interessado em trabalhar juntos ou tem alguma pergunta?<br />
-                Ficarei feliz em conversar!
+                Me encontre nas redes
               </p>
-            </div>
-            
-            {/* Email */}
-            <div className="flex items-center justify-center gap-4 mb-10">
-              <Mail className="w-5 h-5 text-wine-light" />
-              <a 
-                href="mailto:yasminnascimentorocha33@gmail.com" 
-                className="text-xl font-body text-cream hover:text-wine-light transition-colors"
-              >
-                yasminnascimentorocha33@gmail.com
-              </a>
             </div>
             
             {/* Social links */}
@@ -256,55 +232,18 @@ const Index = () => {
                 href="https://github.com/yas-rocha" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
+                className="w-14 h-14 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-6 h-6" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/yasmin-rocha-06a96930a" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
+                className="w-14 h-14 border border-border flex items-center justify-center text-muted-foreground hover:border-wine hover:text-wine-light transition-all duration-300"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-6 h-6" />
               </a>
-            </div>
-            
-            {/* Contact form placeholder */}
-            <div className="mt-16 bg-card border border-border p-8 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-background px-4">
-                <span className="text-sm uppercase tracking-widest text-wine-light">Enviar Mensagem</span>
-              </div>
-              
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm uppercase tracking-wider text-muted-foreground mb-2">Nome</label>
-                  <input 
-                    type="text" 
-                    className="w-full bg-transparent border border-border px-4 py-3 text-cream font-body focus:border-wine focus:outline-none transition-colors"
-                    placeholder="Seu nome"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm uppercase tracking-wider text-muted-foreground mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full bg-transparent border border-border px-4 py-3 text-cream font-body focus:border-wine focus:outline-none transition-colors"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm uppercase tracking-wider text-muted-foreground mb-2">Mensagem</label>
-                  <textarea 
-                    rows={4}
-                    className="w-full bg-transparent border border-border px-4 py-3 text-cream font-body focus:border-wine focus:outline-none transition-colors resize-none"
-                    placeholder="Sua mensagem..."
-                  />
-                </div>
-                <Button variant="vintage" size="lg" className="w-full">
-                  Enviar Mensagem
-                </Button>
-              </form>
             </div>
           </div>
         </div>
