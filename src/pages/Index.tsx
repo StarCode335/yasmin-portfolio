@@ -145,9 +145,14 @@ const Index = () => {
                   
                   {/* Link */}
                   <div className="mt-6">
-                    <Button variant="vintage" size="sm" asChild className="w-full">
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">Ver Projeto →</a>
-                    </Button>
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block w-full text-center py-2 px-4 text-sm uppercase tracking-wider border border-wine text-wine-light hover:bg-wine hover:text-cream transition-all duration-300"
+                    >
+                      Ver Projeto →
+                    </a>
                   </div>
                 </div>
                 
