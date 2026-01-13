@@ -9,21 +9,21 @@ const projects = [
     description: "Página agregadora de links pessoais com design moderno e responsivo.",
     techs: ["HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-    link: "https://github.com/yas-rocha/devlink",
+    link: "https://github.com/yas-rocha/SENAC-AL-AULAS-DEVLINKS",
   },
   {
     title: "CadCliente",
     description: "Sistema de cadastro de clientes com interface intuitiva e funcional.",
     techs: ["JavaScript", "HTML", "CSS"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    link: "https://github.com/yas-rocha/CadCliente",
+    link: "https://github.com/yas-rocha/SENAC-AL-AULAS-CADCLIENTE",
   },
   {
     title: "Code In The Dark",
     description: "Projeto de codificação competitiva desenvolvido durante evento.",
     techs: ["HTML", "CSS"],
     image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop",
-    link: "https://github.com/yas-rocha/code-in-the-dark",
+    link: "https://github.com/yas-rocha/SENAC-AL-AULAS-CODEINTHEDARK",
   },
 ];
 
